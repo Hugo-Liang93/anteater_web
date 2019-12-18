@@ -4,7 +4,7 @@
 			<uni-section :title="fun.functionName" type="line"></uni-section>
 			<view class="example-body">
 				<uni-grid :column="3" :highlight="true" @change="change">
-					<uni-grid-item v-for="(item, index) in fun.subFunction" :index="index" :key="index">
+					<uni-grid-item v-for="(item, index) in fun.subFunction" :index="item.functionId" :key="index">
 						<view class="grid-item-box">
 							<!-- <image :src="" class="image" mode="aspectFill" /> -->
 							<text class="text">{{ item.text }}</text>
@@ -81,7 +81,7 @@
 				let {
 					index
 				} = e.detail
-
+				console.log(e)
 				uni.showToast({
 					title: `点击第${index+1}个宫格`,
 					icon: 'none'
