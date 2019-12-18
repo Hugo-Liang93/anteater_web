@@ -1,0 +1,56 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "主页"
+			}
+		},
+		{
+			"path": "pages/tabBar/user/user",
+			"style": {
+				"navigationBarTitleText": "用户"
+			}
+		}
+	    ,{
+            "path" : "pages/tabBar/manage/manage",
+            "style" : {
+				"navigationBarTitleText": "管理"
+			}
+        }
+    ],
+	"globalStyle": {
+		// white,black
+		"navigationBarTextStyle": "white",
+		// Gobal setting background color
+		"navigationBarBackgroundColor": "#007AFF",
+		"navigationBarTitleText": "Hello Anteater",
+		// 设置导航栏样式(default,custom)
+		//"navigationStyle"
+		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar": {
+		"color": "#7A7E83",
+		"selectedColor": "#007AFF",
+		"borderStyle": "black",
+		"backgroundColor": "#F8F8F8",
+		"list": [{
+				"pagePath": "pages/index/index",
+				"iconPath": "static/tab-home.png",
+				"selectedIconPath": "static/tab-home-current.png",
+				"text": "主页"
+			},
+			{
+				"pagePath": "pages/tabBar/manage/manage",
+				"iconPath": "static/tab-manage.png",
+				"selectedIconPath": "static/tab-home-current.png",
+				"text": "管理"
+			}, {
+				"pagePath": "pages/tabBar/user/user",
+				"iconPath": "static/tab-my.png",
+				"selectedIconPath": "static/tab-my-current.png",
+				"text": "个人"
+			}
+		]
+	}
+}
